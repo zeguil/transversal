@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>TempAlert</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="./static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="./static/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo"><a href="/">TempAlert</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+         
+          <li class="dropdown"><a href="#"><span>Cidades</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="/mao">Manaus</a></li>
+              <li><a href="/sp">São Paulo</a></li>
+              <li><a href="/cr">Curitiba</a></li>
+              <li><a href="/rf">Recife</a></li>
+              <li><a href="/st">Santarem</a></li>
+              <li><a href="/pm">Palmas</a></li>
+              <li><a href="/rb">Rio Branco</a></li>
+            </ul>
+          </li>
+          <li><a class="getstarted scrollto" href="/cadastro">Inscreva-se</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container-fluid" data-aos="fade-up">
+      <div class="row justify-content-center">
+        <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1>Descruba as condições do ar de sua cidade em um click</h1>
+          <h2>Cadastre seu email para receber alertas diariamente.</h2>
+          <div><a href="/cadastro" class="btn-get-started scrollto">Cadastrar</a></div>
+        </div>
+        <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
+
+          
+          <div class="card bg-dark text-white" style="border-radius: 5px;">
+            <div class="bg-image" style="border-radius: 85px;">
+                <img src="./static/imgs/sun.png" class="card-img" alt="weather" />
+                <div class="mask" style="background-color: rgba(190, 216, 232, .5);"></div>
+            </div>
+            <div class="card-img-overlay text-dark p-5" style="font-family: 'Poppins', sans-serif;">
+              <h4 class="mb-0" style="text-shadow: 1px 1px 0px rgb(131, 126, 126);"><strong>{{data.cidade}}, {{data.estado}}, Brasil</strong></h4>
+              <p class="display-2 my-3" style="text-shadow: 2px 2px 0px rgb(131, 126, 126);"><strong>{{data.temperatura}}°C</strong></p>
+              <h4 class="mb-2" style="text-shadow: 1px 1px 0px rgb(131, 126, 126);"><strong>Sensação Térmica: {{data.sensacao_termica}}°C</strong></h4>
+              <h5 style="text-shadow: 1px 1px 0px rgb(131, 126, 126);"><strong>{{data.descricao_tempo}}</strong></h5>
+              <h5 style="text-shadow: 1px 1px 0px rgb(131, 126, 126);"><strong>IQA: {{data.iqa}}</strong></h5>
+              <h5 style="text-shadow: 1px 1px 0px rgb(131, 126, 126);"><strong>Status: {{data.status}}</strong></h5>
+            </div>
+        </div>  
+        </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  
+
+  <!-- Vendor JS  -->
+  <script src="./static/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="./static/vendor/aos/aos.js"></script>
+  <script src="./static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="./static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="./static/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="./static/js/main.js"></script>
+
+</body>
+
+</html>
