@@ -27,7 +27,7 @@ Siga as etapas abaixo para executar o projeto localmente:
 
 1. Clone o repositório:
    ```shell
-   git clone https://github.com/zeguil/Desafio-DigitalSysTec.git
+   git clone https://github.com/zeguil/transversal.git
 2. Navegue até o diretório do projeto:
     ```shell
     cd Transversal
